@@ -1,0 +1,914 @@
+{
+    "abdoo": {
+        "name": "abdoo",
+        "level": "Premier Bac",
+        "scores": {
+            "Barycentre": {
+                "score": 1,
+                "total": 4
+            },
+            "Calcul trigonométrique": {
+                "score": 2,
+                "total": 4
+            },
+            "Devoirs 1er Semestre": {
+                "score": 2,
+                "total": 4
+            },
+            "Dérivation": {
+                "score": 1,
+                "total": 4
+            },
+            "Fonctions": {
+                "score": 1,
+                "total": 4
+            },
+            "Géométrie dans l’espace": {
+                "score": 0,
+                "total": 4
+            },
+            "Limites": {
+                "score": 2,
+                "total": 4
+            },
+            "Produit scalaire": {
+                "score": 0,
+                "total": 4
+            },
+            "Rotation": {
+                "score": 1,
+                "total": 4
+            },
+            "Suites numériques": {
+                "score": 2,
+                "total": 4
+            },
+            "Étude des fonctions": {
+                "score": 1,
+                "total": 4
+            }
+        },
+        "recommendation": "https://www.mathstunisie.com/premier-bac/geometrie-espace",
+        "starting_point": "Géométrie dans l’espace"
+    },
+    "abdoo h": {
+        "name": "abdoo h",
+        "level": "Terminale",
+        "scores": {
+            "Calcul intégral": {
+                "score": 0,
+                "total": 3
+            },
+            "Dénombrement et probabilités": {
+                "score": 1,
+                "total": 3
+            },
+            "Dérivation et étude des fonctions": {
+                "score": 1,
+                "total": 3
+            },
+            "Fonctions exponentielles": {
+                "score": 1,
+                "total": 3
+            },
+            "Fonctions logarithmiques": {
+                "score": 0,
+                "total": 3
+            },
+            "Fonctions primitives": {
+                "score": 0,
+                "total": 3
+            },
+            "Géométrie dans l’espace": {
+                "score": 0,
+                "total": 3
+            },
+            "Limites et continuité": {
+                "score": 1,
+                "total": 3
+            },
+            "Nombres complexes (Partie 1)": {
+                "score": 1,
+                "total": 3
+            },
+            "Nombres complexes (Partie 2)": {
+                "score": 0,
+                "total": 3
+            },
+            "Suites numériques": {
+                "score": 0,
+                "total": 3
+            },
+            "Équations différentielles": {
+                "score": 0,
+                "total": 3
+            }
+        },
+        "recommendation": "Cours général: https://www.mathstunisie.com",
+        "starting_point": "Calcul intégral"
+    },
+    "abdoo hp": {
+        "name": "abdoo hp",
+        "level": "Tronc Commun",
+        "scores": {
+            "Arithmétique dans ℕ": {
+                "score": 1,
+                "total": 4
+            },
+            "Calcul vectoriel": {
+                "score": 0,
+                "total": 3
+            },
+            "Droite dans le plan": {
+                "score": 0,
+                "total": 3
+            },
+            "Ensembles de nombres": {
+                "score": 0,
+                "total": 4
+            },
+            "Fonctions": {
+                "score": 1,
+                "total": 3
+            },
+            "Géométrie dans l'espace": {
+                "score": 0,
+                "total": 3
+            },
+            "Ordre dans ℝ": {
+                "score": 2,
+                "total": 3
+            },
+            "Polynômes": {
+                "score": 0,
+                "total": 3
+            },
+            "Produit scalaire": {
+                "score": 1,
+                "total": 3
+            },
+            "Projection": {
+                "score": 1,
+                "total": 3
+            },
+            "Statistiques": {
+                "score": 1,
+                "total": 3
+            },
+            "Transformations": {
+                "score": 0,
+                "total": 3
+            },
+            "Trigonométrie 1": {
+                "score": 0,
+                "total": 3
+            },
+            "Trigonométrie 2": {
+                "score": 1,
+                "total": 3
+            },
+            "Équations et systèmes": {
+                "score": 1,
+                "total": 3
+            }
+        },
+        "recommendation": "https://www.mathstunisie.com/tronc-commun/vecteurs",
+        "starting_point": "Calcul vectoriel"
+    },
+    "adil": {
+        "name": "adil",
+        "level": "Terminale",
+        "scores": {
+            "Calcul intégral": {
+                "score": 2,
+                "total": 3
+            },
+            "Dénombrement et probabilités": {
+                "score": 1,
+                "total": 3
+            },
+            "Dérivation et étude des fonctions": {
+                "score": 0,
+                "total": 3
+            },
+            "Fonctions exponentielles": {
+                "score": 0,
+                "total": 3
+            },
+            "Fonctions logarithmiques": {
+                "score": 0,
+                "total": 3
+            },
+            "Fonctions primitives": {
+                "score": 1,
+                "total": 3
+            },
+            "Géométrie dans l’espace": {
+                "score": 2,
+                "total": 3
+            },
+            "Limites et continuité": {
+                "score": 1,
+                "total": 3
+            },
+            "Nombres complexes (Partie 1)": {
+                "score": 0,
+                "total": 3
+            },
+            "Nombres complexes (Partie 2)": {
+                "score": 0,
+                "total": 3
+            },
+            "Suites numériques": {
+                "score": 1,
+                "total": 3
+            },
+            "Équations différentielles": {
+                "score": 0,
+                "total": 3
+            }
+        },
+        "recommendation": "Cours général: https://www.mathstunisie.com",
+        "starting_point": "Dérivation et étude des fonctions"
+    },
+    "adil3": {
+        "name": "adil3",
+        "level": "Premier Bac",
+        "scores": {
+            "Barycentre": {
+                "score": 2,
+                "total": 4
+            },
+            "Calcul trigonométrique": {
+                "score": 0,
+                "total": 4
+            },
+            "Devoirs 1er Semestre": {
+                "score": 2,
+                "total": 4
+            },
+            "Dérivation": {
+                "score": 1,
+                "total": 4
+            },
+            "Fonctions": {
+                "score": 3,
+                "total": 4
+            },
+            "Géométrie dans l’espace": {
+                "score": 2,
+                "total": 4
+            },
+            "Limites": {
+                "score": 0,
+                "total": 4
+            },
+            "Produit scalaire": {
+                "score": 3,
+                "total": 4
+            },
+            "Rotation": {
+                "score": 3,
+                "total": 4
+            },
+            "Suites numériques": {
+                "score": 0,
+                "total": 4
+            },
+            "Étude des fonctions": {
+                "score": 1,
+                "total": 4
+            }
+        },
+        "recommendation": "https://www.youtube.com/watch?v=6t8k2f4z6Yk",
+        "starting_point": "Calcul trigonométrique"
+    },
+    "yassin": {
+        "name": "yassin",
+        "level": "Terminale",
+        "scores": {
+            "Calcul intégral": {
+                "score": 1,
+                "total": 3
+            },
+            "Dénombrement et probabilités": {
+                "score": 0,
+                "total": 3
+            },
+            "Dérivation et étude des fonctions": {
+                "score": 1,
+                "total": 3
+            },
+            "Fonctions exponentielles": {
+                "score": 0,
+                "total": 3
+            },
+            "Fonctions logarithmiques": {
+                "score": 0,
+                "total": 3
+            },
+            "Fonctions primitives": {
+                "score": 1,
+                "total": 3
+            },
+            "Géométrie dans l’espace": {
+                "score": 0,
+                "total": 3
+            },
+            "Limites et continuité": {
+                "score": 2,
+                "total": 3
+            },
+            "Nombres complexes (Partie 1)": {
+                "score": 1,
+                "total": 3
+            },
+            "Nombres complexes (Partie 2)": {
+                "score": 0,
+                "total": 3
+            },
+            "Suites numériques": {
+                "score": 0,
+                "total": 3
+            },
+            "Équations différentielles": {
+                "score": 0,
+                "total": 3
+            }
+        },
+        "recommendation": "Cours général: https://www.mathstunisie.com",
+        "starting_point": "Dénombrement et probabilités"
+    },
+    "yassin3": {
+        "name": "yassin3",
+        "level": "Premier Bac",
+        "scores": {
+            "Barycentre": {
+                "score": 1,
+                "total": 4
+            },
+            "Calcul trigonométrique": {
+                "score": 0,
+                "total": 4
+            },
+            "Dérivation": {
+                "score": 1,
+                "total": 4
+            },
+            "Fonctions": {
+                "score": 1,
+                "total": 4
+            },
+            "Géométrie dans l’espace": {
+                "score": 1,
+                "total": 4
+            },
+            "Limites": {
+                "score": 1,
+                "total": 4
+            },
+            "Produit scalaire": {
+                "score": 1,
+                "total": 4
+            },
+            "Rotation": {
+                "score": 0,
+                "total": 4
+            },
+            "Suites numériques": {
+                "score": 1,
+                "total": 4
+            },
+            "Étude des fonctions": {
+                "score": 2,
+                "total": 4
+            }
+        },
+        "recommendation": "https://www.youtube.com/playlist?list=PLIJfenLlfjW_Rhko9ZHIQvst7FKeEQoNo",
+        "starting_point": "Calcul trigonométrique"
+    },
+    "alae": {
+        "name": "alae",
+        "level": "Terminale",
+        "scores": {
+            "Calcul intégral": {
+                "score": 1,
+                "total": 3
+            },
+            "Dénombrement et probabilités": {
+                "score": 0,
+                "total": 3
+            },
+            "Dérivation et étude des fonctions": {
+                "score": 2,
+                "total": 3
+            },
+            "Fonctions exponentielles": {
+                "score": 0,
+                "total": 3
+            },
+            "Fonctions logarithmiques": {
+                "score": 1,
+                "total": 3
+            },
+            "Fonctions primitives": {
+                "score": 1,
+                "total": 3
+            },
+            "Géométrie dans l’espace": {
+                "score": 1,
+                "total": 3
+            },
+            "Limites et continuité": {
+                "score": 1,
+                "total": 3
+            },
+            "Nombres complexes (Partie 1)": {
+                "score": 0,
+                "total": 3
+            },
+            "Nombres complexes (Partie 2)": {
+                "score": 1,
+                "total": 3
+            },
+            "Suites numériques": {
+                "score": 2,
+                "total": 3
+            },
+            "Équations différentielles": {
+                "score": 1,
+                "total": 3
+            }
+        },
+        "recommendation": "Cours pour le sujet faible: Dénombrement et probabilités",
+        "starting_point": "Dénombrement et probabilités"
+    },
+    "yahya": {
+        "name": "yahya",
+        "level": "Premier Bac",
+        "scores": {
+            "Barycentre": {
+                "score": 1,
+                "total": 4
+            },
+            "Calcul trigonométrique": {
+                "score": 0,
+                "total": 4
+            },
+            "Dérivation": {
+                "score": 0,
+                "total": 4
+            },
+            "Fonctions": {
+                "score": 1,
+                "total": 4
+            },
+            "Géométrie dans l’espace": {
+                "score": 1,
+                "total": 4
+            },
+            "Limites": {
+                "score": 0,
+                "total": 4
+            },
+            "Produit scalaire": {
+                "score": 2,
+                "total": 4
+            },
+            "Rotation": {
+                "score": 1,
+                "total": 4
+            },
+            "Suites numériques": {
+                "score": 1,
+                "total": 4
+            },
+            "Étude des fonctions": {
+                "score": 1,
+                "total": 4
+            }
+        },
+        "recommendation": "https://www.youtube.com/playlist?list=PLIJfenLlfjW_Rhko9ZHIQvst7FKeEQoNo",
+        "starting_point": "Calcul trigonométrique"
+    },
+    "yahya22": {
+        "name": "yahya22",
+        "level": "Premier Bac",
+        "scores": {
+            "Barycentre": {
+                "score": 1,
+                "total": 4
+            },
+            "Calcul trigonométrique": {
+                "score": 4,
+                "total": 4
+            },
+            "Dérivation": {
+                "score": 2,
+                "total": 4
+            },
+            "Fonctions": {
+                "score": 1,
+                "total": 4
+            },
+            "Géométrie dans l’espace": {
+                "score": 1,
+                "total": 4
+            },
+            "Limites": {
+                "score": 1,
+                "total": 4
+            },
+            "Produit scalaire": {
+                "score": 0,
+                "total": 4
+            },
+            "Rotation": {
+                "score": 0,
+                "total": 4
+            },
+            "Suites numériques": {
+                "score": 0,
+                "total": 4
+            },
+            "Étude des fonctions": {
+                "score": 1,
+                "total": 4
+            }
+        },
+        "recommendation": "https://www.youtube.com/playlist?list=PLIJfenLlfjW_Rhko9ZHIQvst7FKeEQoNo",
+        "starting_point": "Produit scalaire"
+    },
+    "said": {
+        "name": "said",
+        "level": "Premier Bac",
+        "scores": {
+            "Barycentre": {
+                "score": 2,
+                "total": 4
+            },
+            "Calcul trigonométrique": {
+                "score": 1,
+                "total": 4
+            },
+            "Dérivation": {
+                "score": 1,
+                "total": 4
+            },
+            "Fonctions": {
+                "score": 1,
+                "total": 4
+            },
+            "Géométrie dans l’espace": {
+                "score": 0,
+                "total": 4
+            },
+            "Limites": {
+                "score": 0,
+                "total": 4
+            },
+            "Produit scalaire": {
+                "score": 1,
+                "total": 4
+            },
+            "Rotation": {
+                "score": 1,
+                "total": 4
+            },
+            "Suites numériques": {
+                "score": 1,
+                "total": 4
+            },
+            "Étude des fonctions": {
+                "score": 0,
+                "total": 4
+            }
+        },
+        "recommendation": "https://www.youtube.com/playlist?list=PLIJfenLlfjW_Rhko9ZHIQvst7FKeEQoNo",
+        "starting_point": "Géométrie dans l’espace"
+    },
+    "said1": {
+        "name": "said1",
+        "level": "Premier Bac",
+        "scores": {
+            "Barycentre": {
+                "score": 2,
+                "total": 4
+            },
+            "Calcul trigonométrique": {
+                "score": 1,
+                "total": 4
+            },
+            "Dérivation": {
+                "score": 1,
+                "total": 4
+            },
+            "Fonctions": {
+                "score": 0,
+                "total": 4
+            },
+            "Géométrie dans l’espace": {
+                "score": 2,
+                "total": 4
+            },
+            "Limites": {
+                "score": 2,
+                "total": 4
+            },
+            "Produit scalaire": {
+                "score": 1,
+                "total": 4
+            },
+            "Rotation": {
+                "score": 0,
+                "total": 4
+            },
+            "Suites numériques": {
+                "score": 1,
+                "total": 4
+            },
+            "Étude des fonctions": {
+                "score": 1,
+                "total": 4
+            }
+        },
+        "recommendation": "https://www.youtube.com/playlist?list=PLIJfenLlfjW_Rhko9ZHIQvst7FKeEQoNo",
+        "starting_point": "Fonctions"
+    },
+    "said11": {
+        "name": "said11",
+        "level": "Premier Bac",
+        "scores": {
+            "Barycentre": {
+                "score": 0,
+                "total": 4
+            },
+            "Calcul trigonométrique": {
+                "score": 2,
+                "total": 4
+            },
+            "Dérivation": {
+                "score": 1,
+                "total": 4
+            },
+            "Fonctions": {
+                "score": 1,
+                "total": 4
+            },
+            "Géométrie dans l’espace": {
+                "score": 3,
+                "total": 4
+            },
+            "Limites": {
+                "score": 2,
+                "total": 4
+            },
+            "Produit scalaire": {
+                "score": 0,
+                "total": 4
+            },
+            "Rotation": {
+                "score": 2,
+                "total": 4
+            },
+            "Suites numériques": {
+                "score": 0,
+                "total": 4
+            },
+            "Étude des fonctions": {
+                "score": 1,
+                "total": 4
+            }
+        },
+        "recommendation": "https://www.youtube.com/watch?v=example3",
+        "starting_point": "Barycentre"
+    },
+    "said111": {
+        "name": "said111",
+        "level": "Premier Bac",
+        "scores": {
+            "Barycentre": {
+                "score": 0,
+                "total": 4
+            },
+            "Calcul trigonométrique": {
+                "score": 0,
+                "total": 4
+            },
+            "Dérivation": {
+                "score": 1,
+                "total": 4
+            },
+            "Fonctions": {
+                "score": 1,
+                "total": 4
+            },
+            "Géométrie dans l’espace": {
+                "score": 0,
+                "total": 4
+            },
+            "Limites": {
+                "score": 3,
+                "total": 4
+            },
+            "Produit scalaire": {
+                "score": 1,
+                "total": 4
+            },
+            "Rotation": {
+                "score": 1,
+                "total": 4
+            },
+            "Suites numériques": {
+                "score": 1,
+                "total": 4
+            },
+            "Étude des fonctions": {
+                "score": 2,
+                "total": 4
+            }
+        },
+        "recommendation": "Aucun lien trouvé pour le sujet faible: Barycentre",
+        "starting_point": "Barycentre"
+    },
+    "bra": {
+        "name": "bra",
+        "level": "Terminale",
+        "scores": {
+            "Calcul intégral": {
+                "score": 1,
+                "total": 3
+            },
+            "Dénombrement et probabilités": {
+                "score": 0,
+                "total": 3
+            },
+            "Dérivation et étude des fonctions": {
+                "score": 1,
+                "total": 3
+            },
+            "Fonctions exponentielles": {
+                "score": 1,
+                "total": 3
+            },
+            "Fonctions logarithmiques": {
+                "score": 2,
+                "total": 3
+            },
+            "Fonctions primitives": {
+                "score": 0,
+                "total": 3
+            },
+            "Géométrie dans l’espace": {
+                "score": 1,
+                "total": 3
+            },
+            "Limites et continuité": {
+                "score": 1,
+                "total": 3
+            },
+            "Nombres complexes (Partie 1)": {
+                "score": 0,
+                "total": 3
+            },
+            "Nombres complexes (Partie 2)": {
+                "score": 1,
+                "total": 3
+            },
+            "Suites numériques": {
+                "score": 1,
+                "total": 3
+            },
+            "Équations différentielles": {
+                "score": 0,
+                "total": 3
+            }
+        },
+        "recommendation": "https://www.youtube.com/watch?v=6_Rt-P_Mtec&list=PLPMCOIL54o6UJUJ42QnD1hRQx0ar-kp93",
+        "starting_point": "Dénombrement et probabilités"
+    },
+    "Rihame": {
+        "name": "Rihame",
+        "level": "Tronc Commun",
+        "scores": {
+            "Arithmétique dans ℕ": {
+                "score": 4,
+                "total": 4
+            },
+            "Calcul vectoriel": {
+                "score": 3,
+                "total": 3
+            },
+            "Droite dans le plan": {
+                "score": 1,
+                "total": 3
+            },
+            "Ensembles de nombres": {
+                "score": 3,
+                "total": 4
+            },
+            "Fonctions": {
+                "score": 1,
+                "total": 3
+            },
+            "Géométrie dans l'espace": {
+                "score": 1,
+                "total": 3
+            },
+            "Ordre dans ℝ": {
+                "score": 2,
+                "total": 3
+            },
+            "Polynômes": {
+                "score": 0,
+                "total": 3
+            },
+            "Produit scalaire": {
+                "score": 2,
+                "total": 3
+            },
+            "Projection": {
+                "score": 1,
+                "total": 3
+            },
+            "Statistiques": {
+                "score": 0,
+                "total": 3
+            },
+            "Transformations": {
+                "score": 1,
+                "total": 3
+            },
+            "Trigonométrie 1": {
+                "score": 2,
+                "total": 3
+            },
+            "Trigonométrie 2": {
+                "score": 1,
+                "total": 3
+            },
+            "Équations et systèmes": {
+                "score": 0,
+                "total": 3
+            }
+        },
+        "recommendation": "https://www.youtube.com/watch?v=dDKI3jkMjfw&list=PL024XGD7WCIHMAwUrUW5BAmHu-EiuO9nU",
+        "starting_point": "Polynômes"
+    },
+    "samir samir": {
+        "name": "samir samir",
+        "level": "Terminale",
+        "scores": {
+            "Calcul intégral": {
+                "score": 0,
+                "total": 3
+            },
+            "Dénombrement et probabilités": {
+                "score": 3,
+                "total": 3
+            },
+            "Dérivation et étude des fonctions": {
+                "score": 0,
+                "total": 3
+            },
+            "Fonctions exponentielles": {
+                "score": 0,
+                "total": 3
+            },
+            "Fonctions logarithmiques": {
+                "score": 1,
+                "total": 3
+            },
+            "Fonctions primitives": {
+                "score": 0,
+                "total": 3
+            },
+            "Géométrie dans l’espace": {
+                "score": 0,
+                "total": 3
+            },
+            "Limites et continuité": {
+                "score": 1,
+                "total": 3
+            },
+            "Nombres complexes (Partie 1)": {
+                "score": 0,
+                "total": 3
+            },
+            "Nombres complexes (Partie 2)": {
+                "score": 1,
+                "total": 3
+            },
+            "Suites numériques": {
+                "score": 1,
+                "total": 3
+            },
+            "Équations différentielles": {
+                "score": 1,
+                "total": 3
+            }
+        },
+        "recommendation": "https://www.youtube.com/watch?v=zm8Dy4fbtFA&list=PLJ99nvBc0N-kFTiqTRTwYf3jEPqtYYdVz",
+        "starting_point": "Calcul intégral"
+    }
+}

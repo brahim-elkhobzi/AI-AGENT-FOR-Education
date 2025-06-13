@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Résultats - Quiz de Mathématiques</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="bg-white p-8 rounded shadow-md w-full max-w-lg">
+        <h2 class="text-2xl font-bold mb-6 text-center">Résultats : {{ level_name }}</h2>
+        <h3 class="text-xl mb-4">Scores par thème :</h3>
+        <ul class="mb-6">
+            {% for topic, data in scores.items() %}
+                <li>{{ topic }} : {{ data.score }}/{{ data.total }}</li>
+            {% endfor %}
+        </ul>
+        {% if weakest_topic %}
+            <p class="mb-4">Vous devez commencer vos révisions par : <strong>{{ weakest_topic }}</strong></p>
+            <p>Ressource recommandée : <a href="{{ recommendation }}" class="text-blue-500 hover:underline" target="_blank">{{ recommendation }}</a></p>
+        {% else %}
+            <p>{{ recommendation }}</p>
+        {% endif %}
+        <p class="mt-6 text-center">
+            <a href="{{ url_for('select_level') }}" class="text-blue-500 hover:underline">Retourner au choix du niveau</a> | 
+            <a href="{{ url_for('logout') }}" class="text-blue-500 hover:underline">Se déconnecter</a>
+        </p>
+    </div>
+
+    <section class="recommendation-section" id="recommendation-section">
+        <h2>Recommended Topics for Improvement</h2>
+        <div id="recommendation-content">
+            <p>Recommendations will appear here based on your quiz results.</p>
+        </div>
+        <button type="button" id="get-recommendations-button">Get Recommendations</button>
+    </section>
+
+    <section class="start-app-section" id="start-app-section">
+        <h2>Start Application</h2>
+        <button type="button" id="start-app-button">Start App</button>
+    </section>
+
+    <script>
+        document.getElementById('get-recommendations-button').addEventListener('click', async () => {
+            const scores = {}; // Replace with actual scores from the quiz
+            const response = await fetch('/recommend', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ scores })
+            });
+
+            const data = await response.json();
+            const contentDiv = document.getElementById('recommendation-content');
+            if (data.chat) {
+                contentDiv.innerHTML = `<p>Chat started: ${data.chat}</p>`;
+            } else if (data.recommendations) {
+                contentDiv.innerHTML = Object.entries(data.recommendations).map(([topic, content]) => `
+                    <div>
+                        <h3>${topic}</h3>
+                        <p>${content}</p>
+                    </div>
+                `).join('');
+            } else {
+                contentDiv.innerHTML = `<p>${data.message || data.error}</p>`;
+            }
+        });
+
+        document.getElementById('start-app-button').addEventListener('click', async () => {
+            const response = await fetch('/start_app', {
+                method: 'POST',
+            });
+
+            if (response.ok) {
+                alert('Application started successfully!');
+            } else {
+                alert('Failed to start the application.');
+            }
+        });
+    </script>
+</body>
+</html>

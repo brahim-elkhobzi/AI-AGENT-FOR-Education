@@ -1,0 +1,554 @@
+{
+    "c83542e9-bf5b-4095-98bc-13252e96b406": {
+        "Terminale": {
+            "Calcul intégral": {
+                "score": 0,
+                "total": 3
+            },
+            "Dénombrement et probabilités": {
+                "score": 0,
+                "total": 3
+            },
+            "Dérivation et étude des fonctions": {
+                "score": 0,
+                "total": 3
+            },
+            "Fonctions exponentielles": {
+                "score": 0,
+                "total": 3
+            },
+            "Fonctions logarithmiques": {
+                "score": 1,
+                "total": 3
+            },
+            "Fonctions primitives": {
+                "score": 0,
+                "total": 3
+            },
+            "Géométrie dans l’espace": {
+                "score": 0,
+                "total": 3
+            },
+            "Limites et continuité": {
+                "score": 0,
+                "total": 3
+            },
+            "Nombres complexes (Partie 1)": {
+                "score": 1,
+                "total": 3
+            },
+            "Nombres complexes (Partie 2)": {
+                "score": 1,
+                "total": 3
+            },
+            "Suites numériques": {
+                "score": 0,
+                "total": 3
+            },
+            "Équations différentielles": {
+                "score": 2,
+                "total": 3
+            }
+        }
+    },
+    "55160f7f-afa4-4732-b5d4-0ec894f64056": {
+        "Terminale": {
+            "Calcul intégral": {
+                "score": 1,
+                "total": 3
+            },
+            "Dénombrement et probabilités": {
+                "score": 0,
+                "total": 3
+            },
+            "Dérivation et étude des fonctions": {
+                "score": 1,
+                "total": 3
+            },
+            "Fonctions exponentielles": {
+                "score": 0,
+                "total": 3
+            },
+            "Fonctions logarithmiques": {
+                "score": 0,
+                "total": 3
+            },
+            "Fonctions primitives": {
+                "score": 0,
+                "total": 3
+            },
+            "Géométrie dans l’espace": {
+                "score": 2,
+                "total": 3
+            },
+            "Limites et continuité": {
+                "score": 0,
+                "total": 3
+            },
+            "Nombres complexes (Partie 1)": {
+                "score": 0,
+                "total": 3
+            },
+            "Nombres complexes (Partie 2)": {
+                "score": 1,
+                "total": 3
+            },
+            "Suites numériques": {
+                "score": 1,
+                "total": 3
+            },
+            "Équations différentielles": {
+                "score": 2,
+                "total": 3
+            }
+        },
+        "Premier Bac": {
+            "Barycentre": {
+                "score": 1,
+                "total": 4
+            },
+            "Calcul trigonométrique": {
+                "score": 4,
+                "total": 4
+            },
+            "Dérivation": {
+                "score": 2,
+                "total": 4
+            },
+            "Fonctions": {
+                "score": 1,
+                "total": 4
+            },
+            "Géométrie dans l’espace": {
+                "score": 1,
+                "total": 4
+            },
+            "Limites": {
+                "score": 1,
+                "total": 4
+            },
+            "Produit scalaire": {
+                "score": 0,
+                "total": 4
+            },
+            "Rotation": {
+                "score": 0,
+                "total": 4
+            },
+            "Suites numériques": {
+                "score": 0,
+                "total": 4
+            },
+            "Étude des fonctions": {
+                "score": 1,
+                "total": 4
+            }
+        }
+    },
+    "44a2c561-bb7c-4a67-9046-bf5c1dab215d": {
+        "Premier Bac": {
+            "Barycentre": {
+                "score": 2,
+                "total": 4
+            },
+            "Calcul trigonométrique": {
+                "score": 1,
+                "total": 4
+            },
+            "Dérivation": {
+                "score": 1,
+                "total": 4
+            },
+            "Fonctions": {
+                "score": 1,
+                "total": 4
+            },
+            "Géométrie dans l’espace": {
+                "score": 0,
+                "total": 4
+            },
+            "Limites": {
+                "score": 0,
+                "total": 4
+            },
+            "Produit scalaire": {
+                "score": 1,
+                "total": 4
+            },
+            "Rotation": {
+                "score": 1,
+                "total": 4
+            },
+            "Suites numériques": {
+                "score": 1,
+                "total": 4
+            },
+            "Étude des fonctions": {
+                "score": 0,
+                "total": 4
+            }
+        }
+    },
+    "0146a014-1186-4c29-9afa-93d5dd4da1bc": {
+        "Premier Bac": {
+            "Barycentre": {
+                "score": 2,
+                "total": 4
+            },
+            "Calcul trigonométrique": {
+                "score": 1,
+                "total": 4
+            },
+            "Dérivation": {
+                "score": 1,
+                "total": 4
+            },
+            "Fonctions": {
+                "score": 0,
+                "total": 4
+            },
+            "Géométrie dans l’espace": {
+                "score": 2,
+                "total": 4
+            },
+            "Limites": {
+                "score": 2,
+                "total": 4
+            },
+            "Produit scalaire": {
+                "score": 1,
+                "total": 4
+            },
+            "Rotation": {
+                "score": 0,
+                "total": 4
+            },
+            "Suites numériques": {
+                "score": 1,
+                "total": 4
+            },
+            "Étude des fonctions": {
+                "score": 1,
+                "total": 4
+            }
+        }
+    },
+    "1fbb3b5e-68b8-44a1-bbe8-a754d4994b98": {
+        "Premier Bac": {
+            "Barycentre": {
+                "score": 0,
+                "total": 4
+            },
+            "Calcul trigonométrique": {
+                "score": 2,
+                "total": 4
+            },
+            "Dérivation": {
+                "score": 1,
+                "total": 4
+            },
+            "Fonctions": {
+                "score": 1,
+                "total": 4
+            },
+            "Géométrie dans l’espace": {
+                "score": 3,
+                "total": 4
+            },
+            "Limites": {
+                "score": 2,
+                "total": 4
+            },
+            "Produit scalaire": {
+                "score": 0,
+                "total": 4
+            },
+            "Rotation": {
+                "score": 2,
+                "total": 4
+            },
+            "Suites numériques": {
+                "score": 0,
+                "total": 4
+            },
+            "Étude des fonctions": {
+                "score": 1,
+                "total": 4
+            }
+        }
+    },
+    "a71eaf4c-6dc7-4734-abba-e797ce6d7bdb": {
+        "Premier Bac": {
+            "Barycentre": {
+                "score": 0,
+                "total": 4
+            },
+            "Calcul trigonométrique": {
+                "score": 0,
+                "total": 4
+            },
+            "Dérivation": {
+                "score": 1,
+                "total": 4
+            },
+            "Fonctions": {
+                "score": 1,
+                "total": 4
+            },
+            "Géométrie dans l’espace": {
+                "score": 0,
+                "total": 4
+            },
+            "Limites": {
+                "score": 3,
+                "total": 4
+            },
+            "Produit scalaire": {
+                "score": 1,
+                "total": 4
+            },
+            "Rotation": {
+                "score": 1,
+                "total": 4
+            },
+            "Suites numériques": {
+                "score": 1,
+                "total": 4
+            },
+            "Étude des fonctions": {
+                "score": 2,
+                "total": 4
+            }
+        }
+    },
+    "f9490856-a3ee-4f6b-8cd4-618acf6772c0": {
+        "Tronc Commun": {
+            "Arithmétique dans ℕ": {
+                "score": 0,
+                "total": 4
+            },
+            "Calcul vectoriel": {
+                "score": 1,
+                "total": 3
+            },
+            "Droite dans le plan": {
+                "score": 0,
+                "total": 3
+            },
+            "Ensembles de nombres": {
+                "score": 1,
+                "total": 4
+            },
+            "Fonctions": {
+                "score": 0,
+                "total": 3
+            },
+            "Géométrie dans l'espace": {
+                "score": 0,
+                "total": 3
+            },
+            "Ordre dans ℝ": {
+                "score": 1,
+                "total": 3
+            },
+            "Polynômes": {
+                "score": 2,
+                "total": 3
+            },
+            "Produit scalaire": {
+                "score": 0,
+                "total": 3
+            },
+            "Projection": {
+                "score": 1,
+                "total": 3
+            },
+            "Statistiques": {
+                "score": 1,
+                "total": 3
+            },
+            "Transformations": {
+                "score": 2,
+                "total": 3
+            },
+            "Trigonométrie 1": {
+                "score": 1,
+                "total": 3
+            },
+            "Trigonométrie 2": {
+                "score": 0,
+                "total": 3
+            },
+            "Équations et systèmes": {
+                "score": 0,
+                "total": 3
+            }
+        },
+        "Terminale": {
+            "Calcul intégral": {
+                "score": 1,
+                "total": 3
+            },
+            "Dénombrement et probabilités": {
+                "score": 0,
+                "total": 3
+            },
+            "Dérivation et étude des fonctions": {
+                "score": 1,
+                "total": 3
+            },
+            "Fonctions exponentielles": {
+                "score": 1,
+                "total": 3
+            },
+            "Fonctions logarithmiques": {
+                "score": 2,
+                "total": 3
+            },
+            "Fonctions primitives": {
+                "score": 0,
+                "total": 3
+            },
+            "Géométrie dans l’espace": {
+                "score": 1,
+                "total": 3
+            },
+            "Limites et continuité": {
+                "score": 1,
+                "total": 3
+            },
+            "Nombres complexes (Partie 1)": {
+                "score": 0,
+                "total": 3
+            },
+            "Nombres complexes (Partie 2)": {
+                "score": 1,
+                "total": 3
+            },
+            "Suites numériques": {
+                "score": 1,
+                "total": 3
+            },
+            "Équations différentielles": {
+                "score": 0,
+                "total": 3
+            }
+        }
+    },
+    "c2f1156f-e58f-4c83-877b-6c59462cdc39": {
+        "Tronc Commun": {
+            "Arithmétique dans ℕ": {
+                "score": 4,
+                "total": 4
+            },
+            "Calcul vectoriel": {
+                "score": 3,
+                "total": 3
+            },
+            "Droite dans le plan": {
+                "score": 1,
+                "total": 3
+            },
+            "Ensembles de nombres": {
+                "score": 3,
+                "total": 4
+            },
+            "Fonctions": {
+                "score": 1,
+                "total": 3
+            },
+            "Géométrie dans l'espace": {
+                "score": 1,
+                "total": 3
+            },
+            "Ordre dans ℝ": {
+                "score": 2,
+                "total": 3
+            },
+            "Polynômes": {
+                "score": 0,
+                "total": 3
+            },
+            "Produit scalaire": {
+                "score": 2,
+                "total": 3
+            },
+            "Projection": {
+                "score": 1,
+                "total": 3
+            },
+            "Statistiques": {
+                "score": 0,
+                "total": 3
+            },
+            "Transformations": {
+                "score": 1,
+                "total": 3
+            },
+            "Trigonométrie 1": {
+                "score": 2,
+                "total": 3
+            },
+            "Trigonométrie 2": {
+                "score": 1,
+                "total": 3
+            },
+            "Équations et systèmes": {
+                "score": 0,
+                "total": 3
+            }
+        }
+    },
+    "a5debf71-ad4d-4946-987e-6e4f36d98793": {
+        "Terminale": {
+            "Calcul intégral": {
+                "score": 0,
+                "total": 3
+            },
+            "Dénombrement et probabilités": {
+                "score": 3,
+                "total": 3
+            },
+            "Dérivation et étude des fonctions": {
+                "score": 0,
+                "total": 3
+            },
+            "Fonctions exponentielles": {
+                "score": 0,
+                "total": 3
+            },
+            "Fonctions logarithmiques": {
+                "score": 1,
+                "total": 3
+            },
+            "Fonctions primitives": {
+                "score": 0,
+                "total": 3
+            },
+            "Géométrie dans l’espace": {
+                "score": 0,
+                "total": 3
+            },
+            "Limites et continuité": {
+                "score": 1,
+                "total": 3
+            },
+            "Nombres complexes (Partie 1)": {
+                "score": 0,
+                "total": 3
+            },
+            "Nombres complexes (Partie 2)": {
+                "score": 1,
+                "total": 3
+            },
+            "Suites numériques": {
+                "score": 1,
+                "total": 3
+            },
+            "Équations différentielles": {
+                "score": 1,
+                "total": 3
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+<header>
+    
+    <!-- ...existing code... -->
+</header>
+
+<style>
+.chatbot-logo {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+</style>
+
+<script>
+    document.querySelector('.chatbot-logo').addEventListener('click', function(event) {
+        event.preventDefault();
+        fetch('/recommend', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ scores: { algebra: 40, geometry: 30 } }) // Example payload
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Recommendations:', data);
+            alert('Recommendations fetched! Check console for details.');
+        })
+        .catch(error => console.error('Error:', error));
+    });
+</script>

@@ -1,0 +1,577 @@
+{% include 'base.html' %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Math - Sélection du Niveau</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 2rem 0;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Animated background */
+        .bg-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .math-symbol {
+            position: absolute;
+            font-size: 2rem;
+            color: rgba(255, 255, 255, 0.1);
+            animation: float 8s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.1; }
+            50% { transform: translateY(-30px) rotate(180deg); opacity: 0.3; }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: slideInDown 0.8s ease-out;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 1rem;
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); }
+            to { text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.5); }
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .user-info {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 1rem 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            animation: slideInLeft 0.8s ease-out;
+        }
+
+        .user-info span {
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .logout-btn {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 0.5rem 1rem;
+            margin-left: 1rem;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .logout-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .levels-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .level-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            animation: slideInUp 0.8s ease-out;
+            cursor: pointer;
+        }
+
+        .level-card:nth-child(1) { animation-delay: 0.1s; }
+        .level-card:nth-child(2) { animation-delay: 0.2s; }
+        .level-card:nth-child(3) { animation-delay: 0.3s; }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .level-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+        }
+
+        .level-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.5s;
+        }
+
+        .level-card:hover::before {
+            left: 100%;
+        }
+
+        .level-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+            text-align: center;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        .level-card:nth-child(1) .level-icon { animation-delay: 0s; }
+        .level-card:nth-child(2) .level-icon { animation-delay: 0.3s; }
+        .level-card:nth-child(3) .level-icon { animation-delay: 0.6s; }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        .level-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-align: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .level-description {
+            color: #666;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .level-stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(102, 126, 234, 0.1);
+            border-radius: 10px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #667eea;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: #888;
+            text-transform: uppercase;
+        }
+
+        .select-btn {
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .select-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .select-btn::after {
+            content: '→';
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .select-btn:hover::after {
+            opacity: 1;
+            right: 0.5rem;
+        }
+
+        .flash {
+            padding: 1rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            animation: slideInDown 0.5s ease-out;
+            text-align: center;
+        }
+
+        .flash.success {
+            background: linear-gradient(135deg, #d4edda, #c3e6cb);
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .flash.error {
+            background: linear-gradient(135deg, #f8d7da, #f5c6cb);
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        /* Difficulty indicators */
+        .difficulty {
+            display: flex;
+            justify-content: center;
+            gap: 0.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .difficulty-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #ddd;
+            transition: all 0.3s ease;
+        }
+
+        .level-card:nth-child(1) .difficulty-dot:nth-child(1) { 
+            background: #28a745; 
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        .level-card:nth-child(2) .difficulty-dot:nth-child(1),
+        .level-card:nth-child(2) .difficulty-dot:nth-child(2) { 
+            background: #ffc107; 
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        .level-card:nth-child(3) .difficulty-dot { 
+            background: #dc3545; 
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.7; }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .levels-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .level-card {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-elements" id="bgElements"></div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>📚 Choisissez votre niveau</h1>
+            <p>Sélectionnez le niveau qui correspond à votre parcours scolaire</p>
+        </div>
+
+        <div class="user-info">
+            <span>👋 Bienvenue, {{ session.username }}!</span>
+            <a href="{{ url_for('logout') }}" class="logout-btn">Se déconnecter</a>
+        </div>
+
+        <div class="flash-messages">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="flash {{ category }}">{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+
+        <form method="POST">
+            <div class="levels-grid">
+                <div class="level-card" onclick="selectLevel('1')">
+                    <div class="level-icon">🌱</div>
+                    <div class="difficulty">
+                        <div class="difficulty-dot"></div>
+                        <div class="difficulty-dot"></div>
+                        <div class="difficulty-dot"></div>
+                    </div>
+                    <h2 class="level-title">Tronc Commun</h2>
+                    <p class="level-description">
+                        Bases fondamentales des mathématiques. Idéal pour consolider vos acquis et partir sur de bonnes bases.
+                    </p>
+                    <div class="level-stats">
+                        <div class="stat">
+                            <span class="stat-number">15</span>
+                            <span class="stat-label">Chapitres</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">20</span>
+                            <span class="stat-label">Q. par sujet</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">14/20</span>
+                            <span class="stat-label">Seuil</span>
+                        </div>
+                    </div>
+                    <button type="button" class="select-btn">Commencer le niveau débutant</button>
+                </div>
+
+                <div class="level-card" onclick="selectLevel('2')">
+                    <div class="level-icon">🎯</div>
+                    <div class="difficulty">
+                        <div class="difficulty-dot"></div>
+                        <div class="difficulty-dot"></div>
+                        <div class="difficulty-dot"></div>
+                    </div>
+                    <h2 class="level-title">Premier Bac</h2>
+                    <p class="level-description">
+                        Mathématiques intermédiaires. Pour les étudiants qui maîtrisent les bases et veulent progresser.
+                    </p>
+                    <div class="level-stats">
+                        <div class="stat">
+                            <span class="stat-number">11</span>
+                            <span class="stat-label">Chapitres</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10</span>
+                            <span class="stat-label">Q. par sujet</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">7/10</span>
+                            <span class="stat-label">Seuil</span>
+                        </div>
+                    </div>
+                    <button type="button" class="select-btn">Commencer le niveau intermédiaire</button>
+                </div>
+
+                <div class="level-card" onclick="selectLevel('3')">
+                    <div class="level-icon">🚀</div>
+                    <div class="difficulty">
+                        <div class="difficulty-dot"></div>
+                        <div class="difficulty-dot"></div>
+                        <div class="difficulty-dot"></div>
+                    </div>
+                    <h2 class="level-title">Terminale</h2>
+                    <p class="level-description">
+                        Mathématiques avancées. Le défi ultime pour les étudiants expérimentés qui visent l'excellence.
+                    </p>
+                    <div class="level-stats">
+                        <div class="stat">
+                            <span class="stat-number">12</span>
+                            <span class="stat-label">Chapitres</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10</span>
+                            <span class="stat-label">Q. par sujet</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">7/10</span>
+                            <span class="stat-label">Seuil</span>
+                        </div>
+                    </div>
+                    <button type="button" class="select-btn">Commencer le niveau expert</button>
+                </div>
+            </div>
+            <input type="hidden" name="level" id="selectedLevel">
+        </form>
+    </div>
+
+    <script>
+        // Create animated math symbols background
+        function createMathSymbols() {
+            const symbols = ['∑', '∫', '∂', '∞', 'π', '√', '±', '≠', '≤', '≥', '∆', 'Ω', 'α', 'β', 'γ', 'θ'];
+            const container = document.getElementById('bgElements');
+            
+            for (let i = 0; i < 20; i++) {
+                const symbol = document.createElement('div');
+                symbol.className = 'math-symbol';
+                symbol.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+                symbol.style.left = Math.random() * 100 + '%';
+                symbol.style.top = Math.random() * 100 + '%';
+                symbol.style.animationDelay = Math.random() * 8 + 's';
+                symbol.style.animationDuration = (Math.random() * 4 + 6) + 's';
+                container.appendChild(symbol);
+            }
+        }
+
+        // Level selection
+        function selectLevel(level) {
+            document.getElementById('selectedLevel').value = level;
+            
+            // Add selection animation
+            const cards = document.querySelectorAll('.level-card');
+            const selectedCard = cards[level - 1];
+            
+            cards.forEach(card => {
+                if (card !== selectedCard) {
+                    card.style.opacity = '0.5';
+                    card.style.transform = 'scale(0.95)';
+                }
+            });
+            
+            selectedCard.style.transform = 'scale(1.05)';
+            selectedCard.style.boxShadow = '0 40px 80px rgba(102, 126, 234, 0.4)';
+            
+            // Submit form after animation
+            setTimeout(() => {
+                document.querySelector('form').submit();
+            }, 300);
+        }
+
+        // Card hover effects
+        document.querySelectorAll('.level-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                const icon = this.querySelector('.level-icon');
+                icon.style.transform = 'scale(1.2) rotate(10deg)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                const icon = this.querySelector('.level-icon');
+                icon.style.transform = 'scale(1) rotate(0deg)';
+            });
+        });
+
+        // Initialize animations
+        document.addEventListener('DOMContentLoaded', function() {
+            createMathSymbols();
+            
+            // Stagger card animations
+            document.querySelectorAll('.level-card').forEach((card, index) => {
+                card.style.animationDelay = (index * 0.2) + 's';
+            });
+            
+            // Add interactive hover sounds (visual feedback)
+            document.querySelectorAll('.select-btn').forEach(btn => {
+                btn.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-3px) scale(1.02)';
+                });
+                
+                btn.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key >= '1' && e.key <= '3') {
+                selectLevel(e.key);
+            }
+        });
+
+        // Progressive enhancement for touch devices
+        if ('ontouchstart' in window) {
+            document.querySelectorAll('.level-card').forEach(card => {
+                card.addEventListener('touchstart', function() {
+                    this.style.transform = 'scale(0.98)';
+                });
+                
+                card.addEventListener('touchend', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+        }
+    </script>
+</body>
+</html>
